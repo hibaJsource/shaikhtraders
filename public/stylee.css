@@ -1,0 +1,449 @@
+
+                                                       /*  INDEX.HTML */
+html , body{
+   background-color: black;
+   margin: 0;padding: 0;
+}
+
+
+
+/* NAVBAR */
+.edit{
+    height: 75%;
+    width: 35%;
+ }
+ .navbar-nav{
+    letter-spacing: .1rem;
+ }
+ .nav-item:hover{
+   background-color: #672d2ea6;
+}
+.navbar-dark{
+   background-color: rgba(0, 0, 0, 0.438);
+}
+.dropdown-menu {
+   background-color: #782d2d;
+}
+.dropdown a{
+   color: #e4c0c1;
+}
+.dropdown a:hover{
+   color: #e4c0c1;}
+.navbar-collapse .nav-item:hover{
+   background-color: #672d2ea6;
+}
+/* CAROUSEL */
+ .carousel-caption h5{
+   font-size: 60px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   padding-top: -350px;
+   font-family: 'Courgette', cursive;
+   margin-bottom: 400px;
+
+}
+@media only screen and (max-width:1385px){
+   .carousel-caption h5{
+      font-size: 40px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding-top: -230px;
+      font-family: 'Courgette', cursive;
+      margin-bottom: 300px;
+   }
+   
+}
+@media only screen and (max-width:1060px){
+   .carousel-caption h5{
+      font-size: 40px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding-top: -230px;
+      font-family: 'Courgette', cursive;
+      margin-bottom: 200px;
+   
+   }
+   
+}
+@media only screen and (max-width:777px){
+   .carousel-caption h5{
+      font-size: 25px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding-top: -230px;
+      font-family: 'Courgette', cursive;
+      margin-bottom: 130px;
+   }
+   
+}
+
+.btn-secondary{
+   background-image: linear-gradient(to right bottom, #1a1a1a, #201e22, #282128, #32242c, #3d272e, #46292f, #4e2a2f, #562c2e, #5f2c2e, #672d2e, #702d2e, #782d2d);
+}
+
+
+
+
+/* HEADING */
+
+.heading{
+   background-image: radial-gradient(circle, #1a1a1a, #201e22, #282128, #32242c, #3d272e, #46292f, #4e2a2f, #562c2e, #5f2c2e, #672d2e, #702d2e, #782d2d);
+   color: beige;
+   font-family: 'Chelsea Market', cursive;
+   text-align: center;
+   padding: 18px;
+}
+
+.howtowork{
+   background-color: bisque;
+   width: 70%;
+   margin: auto;
+}
+#step1 , #step2 , #step3{
+  display: flex;
+}
+#step1{
+   background-color: rgba(122, 126, 189, 0.856);
+ }
+ #step2{
+   background-color: rgb(246, 184, 47);
+ }
+ #step3{
+   background-color: rgba(205, 128, 121, 0.712);
+ }
+.box1_1{
+   margin-top: 10%;
+   margin-bottom: 10%;}
+
+ .box3_1{
+   margin-top: 10%;
+   margin-bottom:10% ;
+ }
+ 
+ .steps{
+   font-family: 'Chelsea Market', cursive;
+   margin: 5%;
+   margin-top: 16%;
+   font-size: 200%;
+   text-decoration: underline;
+
+ }
+ .substeps{
+   width: 70%;
+   margin: 5%;
+   font-weight: 500;
+   font-size:120%;
+
+ }
+ @media only screen and (max-width:630px){
+   
+   .steps{
+      font-family: 'Chelsea Market', cursive;
+      margin: 5%;
+      margin-top: 16%;
+      font-size: 120%;
+      text-decoration: underline;
+   
+    }
+    .substeps{
+      width: 70%;
+      margin: 5%;
+      font-weight: 500;
+      font-size:80%;
+   
+    }
+    .head{
+      font-size:20px;
+      margin: -3px;
+   
+    }
+   
+}
+@media only screen and (max-width:386px){
+   .steps{
+      font-family: 'Chelsea Market', cursive;
+      margin: 5%;
+      margin-top: 16%;
+      font-size: 90%;
+      text-decoration: underline;
+   
+    }
+    .substeps{
+      width: 70%;
+      margin: 5%;
+      font-weight: 500;
+      font-size:50%;
+   
+    }
+    .head{
+      font-size:13px;
+      margin: -3px;
+    }
+   
+}
+
+ .box2_2{
+   margin-top: 10%;
+   margin-bottom: 8%;
+   background-color: 	rgb(246, 184, 47);
+ }
+ .box2_1{
+   margin-top: 5%;
+   margin-bottom: 10%;
+   background-color: 	rgb(246, 184, 47);
+ }
+.background{
+   padding: 25px ;
+   padding-bottom: 5%;
+   background-image: linear-gradient(to right bottom, #1a1a1a, #201e22, #282128, #32242c, #3d272e, #46292f, #4e2a2f, #562c2e, #5f2c2e, #672d2e, #702d2e, #782d2d);
+  }
+  #check{
+  margin: auto;
+  }
+  .rdboxheading{
+   color: beige;
+   font-family: 'Chelsea Market', cursive;
+   text-align: center;
+   margin: 5%;
+}
+#rdbox1{
+   color: beige;
+  font-family: 'Chelsea Market', cursive;
+   margin: 5%;
+}
+#rdbox2{
+   color: beige;
+   margin: 5%;
+}
+
+
+@media only screen and (max-width:361px){
+   .head{
+      font-size: x-large;
+   }}
+/* FOOTER */
+
+.icon{ 
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    padding-right: 4%
+}
+#g{ 
+    margin-left: 10px;
+    list-style: none;
+}
+ #footericon{ 
+   color: rgb(199, 202, 203);
+
+}
+
+.footerlinks{ 
+   display: flex;
+   justify-content: center;
+   list-style: none;
+}
+
+#footerlinkss{ 
+   margin: 10px;
+   text-decoration: underline;
+   color: 	rgb(124, 119, 121);
+}
+#footerlinkss:hover{ 
+   color: rgb(199, 202, 203);
+}
+.footerup{ 
+   color: #672d2ea6;
+   float: right;
+   margin:15px;
+   behavior:smooth; 
+}
+.footerlast{ 
+   color: rgb(124, 119, 121);
+   text-align: center;
+   padding-left: 6%;
+}
+.foo{ 
+   border-top: 2px solid #7a3738f8;
+}
+
+
+                                                       /*  STORE.HTML */
+
+
+.new{ 
+   margin-top: 4%;
+   padding: 2%;
+}
+@media only screen and (max-width:361px){
+   .new{ 
+      margin-top: 10%;
+      padding: 2%;
+   }  
+}
+
+#search{ 
+  width: 60%;
+}
+.btn-outline-danger:hover{ 
+   background: #672d2edc !important;
+ }
+ .box select{ 
+   background: #782d2d;
+   color: beige;
+   padding: 8px;
+   width: 150px;
+   height: 5%;
+   border: none;
+   font-size: smaller;
+   -webkit-apperance: button;
+   outline: none;
+   border-radius: 30px;
+   margin: 1%;
+ }
+ .box select:hover{ 
+   background: black;
+ }
+ .box p{ 
+  display: inline-block;
+  color: beige;
+  font-size: large;
+ }
+ .box{ 
+  float: left;
+  width: 70%;
+  border-radius: 0px 30px 30px 0px;
+  }
+  .boldselector{ 
+   font-weight: bolder;
+   }
+   .bg{ 
+      background-color:#704648 ;
+      margin-top: -50px;
+    }
+   .card {
+      text-align: center;
+      border: none;
+      background-color: #b95e5e00;
+  }
+  
+  .card-heading {
+      font-size: 25px; font-weight: 600;color: #ddbabb;
+  }
+  .card-text{
+   color: #fceded;
+}
+  .btn-pink {
+      background-color:#782d2d; transition: .5s;
+  }
+  
+  .btn-pink:hover{background-color:#8a3838a1}
+  .card-img-top:hover{transform: scale(1.2); transition: 1s}
+
+
+  .bc {text-shadow: 2px 2px #ff0e3d;
+   background-image: url("images/models/final5.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: top center;
+}
+
+.inner-text {
+   padding: 30px 0;
+}
+
+.check{
+   border: 2px solid #ddbabb;
+   border-bottom: none;
+   background-color: #b95e5ed3;
+   border-radius: 0px 30px 0px 0px;
+}
+
+.wht{
+   text-align: center;
+   margin:6%;
+   color: #f7e6e6ea;
+   font-family: 'Chelsea Market', cursive;
+}
+
+.btnbrowse{
+   background-color: rgba(205, 128, 121, 0.712);
+   color: #f7e6e6 !important;
+   border: 1px solid rgba(131, 42, 34, 0.945);
+}
+.btnbrowse:hover{
+   background-color: rgba(205, 128, 121, 0.938);
+}
+.img-fluid {
+   max-width: 100%;
+   height: auto;
+ }
+
+ @media only screen and (max-width:505px){
+   .wht{
+      margin:30%;
+      }
+   .heeading{
+     font-size: large;
+      }
+   .wht{
+      text-align: center;
+      color: #f7e6e6ea;
+      font-family: 'Chelsea Market', cursive;
+      font-size: x-large;
+   }
+  
+}
+
+
+
+/*                                     HELP CENTER*/
+
+#activee{
+   color: white !important;
+}
+
+.topquestionheading{
+   font-family: 'Chelsea Market', cursive;
+   text-align: center;
+   padding: 18px;
+   color: #f7e6e6ea;
+   font-size: 200%;
+   text-decoration: underline;
+   margin: 5px;
+
+}
+.ac {
+   background-image: url("images/bg.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: top center;
+}
+.topheading{
+   font-family: 'Kaushan Script', cursive;
+   padding: 18px;
+   color: #ac9c9cea;
+   font-size: 200%;
+   margin: 5px;
+
+}
+.footermgtop{
+   margin-top: 12%;
+
+}
+
+/* signup */
+@media only screen and (max-width:777px){
+   .carousel-caption h5{
+      font-size: 25px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding-top: -230px;
+      font-family: 'Courgette', cursive;
+      margin-bottom: 130px;
+   }
+   
+}
+

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="boostrap.css">
+    <title>Shaikh Traders</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+                    <a class="navbar-brand" href="index.html"><img class="edit" src="images/logo.png" alt="NED"></a>
+                </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto nav-tabs">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="store.html">STORE <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown" >
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown " role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        CUTOMER CARE
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                        <a class="dropdown-item" href="helpcenter.html">Help Center</a>
+                        <a class="dropdown-item" href="ordering.html">Ordering</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" href="#">TRACK MY ORDER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo" href="#">LOGIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">SIGN UP</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <div class="modal fade modall" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Track my Order</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Please confirm your email:</label>
+                <input type="text" class="form-control" id="recipient-name"  placeholder="someone@email.com">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Your order number:</label>
+                <input class="form-control" id="message-text" placeholder="eg: 123456789"></input>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary">Track</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modall" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login To Your Account</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Username:</label>
+                <input type="text" class="form-control" id="recipient-name" placeholder="Shaikh-User">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="new">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2  ml-auto" id="search" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+          </form>
+    </div>
+
+    <div class="heading box">
+        <p>Categorize your Deired Accessories By</p>
+        <select>
+            <option class="boldselector dropdown-divider">Device Brand</option>
+            <option>Apple</option>
+            <option>Amazon</option>
+            <option>Huawei</option>
+            <option>LG</option>
+            <option>Motorola</option>
+            <option>Nokia</option>
+            <option>Samsung</option>
+            <option>Sigma</option>
+            <option>Other</option>  
+        </select>
+        <select>
+            <option class="boldselector">Model</option>
+            <option>iPhone X</option>
+            <option>iPhone 8</option>
+            <option>iPhone8 Plus</option>
+            <option>Motorola G Play</option>
+            <option>Nokia X4</option>
+            <option>Samsung S5</option>
+            <option>Samsung Note10+</option>
+            <option>Sony Xperia Z1</option>
+            <option>Other</option>
+            
+
+        </select>
+        <select>
+            <option class="boldselector">Color</option>
+            <option>Black</option>
+            <option>Blue</option>
+            <option>Golden</option>
+            <option>Pink</option>
+            <option>Purple</option>
+            <option>Red</option>
+            <option>White</option>
+            <option>Yellow</option>
+            <option>Other</option>
+        </select>
+
+        <select>
+            <option class="boldselector">Sort By</option>
+            <option>Price-low to high</option>
+            <option>Price-high to low</option>
+            <option>Average ratings</option>
+            <option>Best seller</option>
+            <option>Newest</option>
+            <option>Oldest</option>
+            <option>Other</option>
+            
+
+            
+
+        </select>
+        
+    </div>
+
+
+
+    <div class="container mt-5 check">
+        <div class="row wow flash wht">
+           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center"><h1 class="heeading">LATEST PRODUCTS</h1></div>  
+        </div>
+        
+        <div class="row mt-5">
+          <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 wow zoomInDown">
+            <div class="card">
+             <img class="card-img-top img-fluid" alt="img1" src="images/models/num1.png">
+                <div class="card-body">
+                   <div class="card-heading">Rs.2,799</div>
+                    <p class="card-text">Ring LED Camera Light With Small LED Light</p>
+                    <a class="btn btn-pink text-light"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a>
+                </div>
+            </div>
+            </div>   
+            
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  wow zoomInLeft">
+            <div class="card">
+             <img class="card-img-top img-fluid" alt="img1" src="images/models/num2.png">
+                <div class="card-body">
+                   <div class="card-heading">Rs.1,199</div>
+                    <p class="card-text">Apple AirPods With Charging Case </p>
+                    <a class="btn btn-pink text-light"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a>
+                </div>
+            </div>
+            </div> 
+            
+
+            
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  wow zoomInRight">
+            <div class="card">
+             <img class="card-img-top img-fluid" alt="img1" src="images/models/num3.png">
+                <div class="card-body">
+                   <div class="card-heading">Rs.799</div>
+                    <p class="card-text">Novl Cell Phone Desireable heightened Tripod Stand</p>
+                    <a class="btn btn-pink text-light"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a>
+                </div>
+            </div>
+            </div> 
+            
+            
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  wow zoomInUp">
+            <div class="card">
+             <img class="card-img-top img-fluid" alt="img1" src="images/models/num4.png">
+                <div class="card-body">
+                   <div class="card-heading">Rs.149</div>
+                    <p class="card-text">PopSocket Collasible Grip and Stand</p>
+                    <a class="btn btn-pink text-light"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</a>
+                </div>
+            </div>
+            </div> 
+        </div>
+        </div>
+
+
+
+
+
+
+        <div class="container-fluid bc">
+            <div class="container pt-5 pb-5">
+              <div class="row inner-text">
+                <div class="col-md-6 text-light f">
+                    <h3 class="wow slideInUp">NEW ARRIVALS</h3>
+                    <h1 class="mt-4 wow slideInDown">BASS BOOSTER HEADPHONE</h1>
+                    <a class="btn btn-lg bg-pink text-light mt-3 wow slideInLeft"> SHOP NOW</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+        <div class="bg">
+          <div class="container mt-5">
+            <div class="row wow flash">
+                  <div class="col-md-12 text-center">
+                <h1 class="wht">BROWSE TOP SELLING PRODUCTS</h1>
+              </div>
+                </div>
+                  
+            <div class="row mt-4 wow bounceIn">
+                  <div class="col-md-12">
+                <div class="col-md-12"> <a class="btn btn-light ml-4 btnbrowse">HANDFREE</a> <a class="btn btn-light ml-4 btnbrowse">CHARGER</a> <a class="btn btn-light ml-4 btnbrowse">DATA CABLE</a> <a class="btn btn-light ml-4 btnbrowse">MOBILE BATTERIES</a> <a class="btn btn-light ml-4 btnbrowse">MOBILE CASES</a> <a class="btn btn-light ml-4 btnbrowse">POP SOCKET</a> <a class="btn btn-light ml-4 btnbrowse">PROTECTOR</a></div>
+              </div>
+                </div>
+                  
+                  
+            <div class="row mt-5">
+                  <div class="col-md-3 wow slideInDown">
+                <div class="card"> <img class="card-img-top img-fluid" alt="img1" src="images/models/snap1.png">
+                      <div class="card-body">
+                    <div class="card-heading">Rs.599</div>
+                    <p class="card-text">Micro Digital USB Data Cable With Long Wires </p>
+                    <a class="btn btn-pink text-light"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a> </div>
+                    </div>
+              </div>
+                  <div class="col-md-3 wow slideInLeft">
+                <div class="card"> <img class="card-img-top img-fluid" alt="img1" src="images/models/snap2.png">
+                      <div class="card-body">
+                    <div class="card-heading">Rs.3,599</div>
+                    <p class="card-text">Wireless charging pads With power Stability </p>
+                    <a class="btn btn-pink text-light"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a> </div>
+                    </div>
+              </div>
+                  <div class="col-md-3 wow slideInRight">
+                <div class="card"> <img class="card-img-top img-fluid" alt="img1" src="images/models/snap3.png">
+                      <div class="card-body">
+                    <div class="card-heading">Rs.999</div>
+                    <p class="card-text">Selfie Stick With Desireable Length </p>
+                    <a class="btn btn-pink text-light"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a> </div>
+                    </div>
+              </div>
+                  <div class="col-md-3 wow slideInUp">
+                <div class="card"> <img class="card-img-top img-fluid" alt="img1" src="images/models/snap4.png">
+                      <div class="card-body">
+                    <div class="card-heading">Rs.1,999</div>
+                    <p class="card-text">Pocket Size Power Bank USB Port 10000 mAh </p>
+                    <a class="btn btn-pink text-light"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</a> </div>
+                    </div>
+              </div>
+                </div>
+        
+                <div class="row mt-5">
+                    <div class="col-md-3 wow flipInX">
+                  <div class="card"> <img class="card-img-top img-fluid" alt="img1" src="images/models/snap5.png">
+                        <div class="card-body">
+                      <div class="card-heading">Rs.2,999</div>
+                      <p class="card-text">Stm Power Bank Dual USB Port 10000 mAh</p>
+                      <a class="btn btn-pink text-light"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a> </div>
+                      </div>
+                </div>
+                    <div class="col-md-3 wow flipInY">
+                  <div class="card"> <img class="card-img-top img-fluid" alt="img1" src="images/models/snap6.png">
+                        <div class="card-body">
+                      <div class="card-heading">Rs.899</div>
+                      <p class="card-text">MPG Tempered Glass Screen Protector</p>
+                      <a class="btn btn-pink text-light"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a> </div>
+                      </div>
+                </div>
+                    <div class="col-md-3 wow flipInX">
+                  <div class="card"> <img class="card-img-top img-fluid" alt="img1" src="images/models/snap7.png">
+                        <div class="card-body">
+                      <div class="card-heading">Rs.2,199</div>
+                      <p class="card-text">Waterproof Hybrid Wireless Earbuds </p>
+                      <a class="btn btn-pink text-light"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a> </div>
+                      </div>
+                </div>
+                    <div class="col-md-3 wow flipInY">
+                  <div class="card"> <img class="card-img-top img-fluid" alt="img1" src="images/models/snap8.png">
+                        <div class="card-body">
+                      <div class="card-heading">Rs.699</div>
+                      <p class="card-text">1M LED Light Micro USB Data Cable </p>
+                      <a class="btn btn-pink text-light"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</a> </div>
+                      </div>
+                </div>
+                  </div>
+            
+            <div class="row mt-5">
+              <div class="col-md-3 wow flipInX">
+            <div class="card"> <img class="card-img-top img-fluid" alt="img1" src="images/models/snap9.png">
+                  <div class="card-body">
+                <div class="card-heading">1,399</div>
+                <p class="card-text">Samsung Original Long Lasting Cell Battery </p>
+                <a class="btn btn-pink text-light"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a> </div>
+                </div>
+          </div>
+              <div class="col-md-3 wow flipInY">
+            <div class="card"> <img class="card-img-top img-fluid" alt="img1" src="images/models/snap10.png">
+                  <div class="card-body">
+                <div class="card-heading">Rs.1,299</div>
+                <p class="card-text">Samsung Level Bass Headphone</p>
+                <a class="btn btn-pink text-light"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a> </div>
+                </div>
+          </div>
+              <div class="col-md-3 wow flipInX">
+            <div class="card"> <img class="card-img-top img-fluid" alt="img1" src="images/models/snap11.png">
+                  <div class="card-body">
+                <div class="card-heading">Rs.999</div>
+                <p class="card-text">Digital 7800mAh DP-7800F Portable Power Bank</p>
+                <a class="btn btn-pink text-light"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add To Cart</a> </div>
+                </div>
+          </div>
+              <div class="col-md-3 wow flipInY">
+            <div class="card"> <img class="card-img-top img-fluid" alt="img1" src="images/models/snap12.png">
+                  <div class="card-body">
+                <div class="card-heading">Rs.899</div>
+                <p class="card-text">Professiona Camera Tripod Stand</p>
+                <a class="btn btn-pink text-light"><i class="fa fa-cart-plus" aria-hidden="true"></i>Add To Cart</a> </div>
+                </div>
+          </div>
+            </div>
+      </div>
+    </div>
+
+
+
+            <!--  FOOTER  -->
+      
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+            <ul class="icon">
+                <li id="g">
+                    <a   id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-facebook-official" aria-hidden="true"></i></span></a>
+                </li>
+                <li id="g">
+                    <a  id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+                </li>
+                <li id="g">
+                    <a  id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-phone-square" aria-hidden="true"></i></span></a>
+                </li>
+                <li id="g">
+                    <a  id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+                </li>
+            </ul>
+        </div>
+        </div>
+      </div>
+
+      <div class="footerborder">
+        <ul class="footerlinks">
+            <li>
+              <a  id="footerlinkss" href="index.html">HOME </a>
+            </li>
+            <li >
+              <a id="footerlinkss" href="store.html">STORE </a>
+            </li>
+            <li >
+              <a id="footerlinkss" href="helpcenter.html">CUTOMER CARE</a>
+            </li>
+            <li>
+                <a id="footerlinkss" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" href="#">TRACK MY ORDER</a>
+            </li>
+            <li>
+                <a id="footerlinkss" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo" href="#">LOGIN</a>
+            </li>
+            <li>
+                <a id="footerlinkss" href="signup.html">SIGN UP</a>
+            </li>
+        </ul>
+      </div>
+      <div>
+        <a class="footerup" href="#"><span><i class="fa fa-arrow-circle-up " style="font-size:60px;" aria-hidden="true"></i></span></a>
+      </div>
+      <div class="footerlast">
+          Copyright © 2019 Saylani Welfare
+      </div>
+    
+
+
+
+    
+
+
+   
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

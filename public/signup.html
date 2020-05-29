@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylee.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Courgette&display=swap" rel="stylesheet">
+    <style>
+      .signup{
+       margin-top: 120px;
+       border: 2px solid white;
+       padding-top: 2%;
+       padding: 5%;
+       width: 60%;
+       border-radius: 120px 0px 120px 0px;
+       background-image: linear-gradient(to top right, rgba(168, 125, 125, 0.77), rgba(159, 109, 109, 0.77), rgba(150, 93, 93, 0.78), rgba(140, 78, 78, 0.78), rgba(131, 62, 62, 0.79), rgba(122, 46, 46, 0.79), rgba(120, 43, 43, 0.79), rgba(118, 39, 39, 0.79), rgba(116, 36, 36, 0.79), rgba(114, 33, 33, 0.79), rgba(112, 29, 29, 0.79), rgba(110, 26, 26, 0.79));
+        }
+     
+      .signupheading
+      {
+      padding: 2%;
+      font-family: 'Chelsea Market', cursive;
+      font-size: xx-large;
+      color: #d8b3b3ec;
+        }
+        @media only screen and (max-width:533px){
+      .signupheading
+      {
+      padding: 2%;
+      font-family: 'Chelsea Market', cursive;
+      font-size: larger;
+      color: #d8b3b3ec;
+      padding-left: 10px;
+        }
+      }
+      .signup2 label{
+      color: #f7e6e6ea;
+        }
+      .signup2 .uu{
+      color: black;
+        }
+        .footermagtop{
+      margin-top: 8%;
+        }
+    </style>
+    <title>Shaikh Traders</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+                    <a class="navbar-brand" href="index.html"><img class="edit" src="images/logo.png" alt="NED"></a>
+                </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto nav-tabs">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="store.html">STORE </a>
+                    </li>
+                    <li class="nav-item dropdown" >
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown " role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        CUTOMER CARE
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                        <a class="dropdown-item" href="helpcenter.html">Help Center</a>
+                        <a class="dropdown-item" href="ordering.html">Ordering</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" href="#">TRACK MY ORDER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo" href="#">LOGIN</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">SIGN UP <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <div class="modal fade modall" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Track my Order</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Please confirm your email:</label>
+                <input type="text" class="form-control" id="recipient-name"  placeholder="someone@email.com">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Your order number:</label>
+                <input class="form-control" id="message-text" placeholder="eg: 123456789"></input>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary">Track</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade modall" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login To Your Account</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Username:</label>
+                <input type="text" class="form-control" id="recipient-name" placeholder="Shaikh-User">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container-fluid signup">
+
+      <h1 class="signupheading">Create your Shaikh Account</h1>
+        <div class="container signup2">
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">First Name</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Last Name</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputEmail4">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputPassword4">Password</label>
+              <input type="password" class="form-control" id="inputPassword4" placeholder="min 6 characters with num and letters">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress2">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="inputCity">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">Province</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>Sindh</option>
+                <option>Punjab</option>
+                <option>Balochistan</option>
+                <option>KPK</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputZip">Phone Num</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <label for="inputState">Birthday</label>
+              <select id="inputState" class="form-control">
+                <option selected>Month...</option>
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputState" class="uu">&nbsp</label>
+              <select id="inputState" class="form-control">
+                <option selected>Day...</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputState" class="uu"> &nbsp </label>
+              <select id="inputState" class="form-control">
+                <option selected>Year...</option>
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+                <option>2011</option>
+                <option>2010</option>
+                <option>2009</option>
+                <option>2008</option>
+                <option>2007</option>
+                <option>2006</option>
+                <option>2005</option>
+                <option>2004</option>
+                <option>2003</option>
+                <option>2002</option>
+                <option>2001</option>
+                <option>2000</option>
+                <option>1999</option>
+                <option>1998</option>
+                <option>1997</option>
+                <option>1996</option>
+                <option>1995</option>
+                <option>1994</option>
+                <option>1993</option>
+                <option>1992</option>
+                <option>1991</option>
+                <option>1990</option>
+                <option>1989</option>
+                <option>1988</option>
+                <option>1987</option>
+                <option>1986</option>
+                <option>1985</option>
+                <option>1984</option>
+                <option>1983</option>
+                <option>1982</option>
+                <option>1981</option>
+                <option>1980</option>
+                <option>1970's</option>
+              </select>
+            </div>
+            <div class="form-group col-md-3">
+              <label for="inputState">Gender</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="custom-control custom-switch" id="cc">
+              <input type="checkbox" class="custom-control-input" id="customSwitch1">
+              <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-secondary">Sign up</button>
+        </form>
+      </div>
+    </div>
+    
+
+
+    
+      <!--  FOOTER  -->
+    
+    <div class="container foo footermagtop">
+      <div class="row">
+      <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+          <ul class="icon">
+              <li id="g">
+                  <a   id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-facebook-official" aria-hidden="true"></i></span></a>
+              </li>
+              <li id="g">
+                  <a  id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+              </li>
+              <li id="g">
+                  <a  id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-phone-square" aria-hidden="true"></i></span></a>
+              </li>
+              <li id="g">
+                  <a  id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+              </li>
+          </ul>
+      </div>
+      </div>
+      </div>
+  
+      <div class="footerborder">
+      <ul class="footerlinks">
+          <li>
+              <a  id="footerlinkss" href="index.html">HOME </a>
+          </li>
+          <li >
+              <a id="footerlinkss" href="store.html">STORE </a>
+          </li>
+          <li >
+              <a id="footerlinkss" href="helpcenter.html">CUTOMER CARE</a>
+          </li>
+          <li>
+              <a id="footerlinkss" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" href="#">TRACK MY ORDER</a>
+          </li>
+          <li>
+              <a id="footerlinkss" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo" href="#">Login</a>
+          </li>
+          <li>
+              <a id="footerlinkss" href="signup.html">Sign Up</a>
+          </li>
+      </ul>
+      </div>
+      <div>
+      <a class="footerup" href="#"><span><i class="fa fa-arrow-circle-up " style="font-size:60px;" aria-hidden="true"></i></span></a>
+      </div>
+      <div class="footerlast">
+          Copyright © 2019 Saylani Welfare
+      </div>
+    
+
+
+
+          
+           
+        
+
+
+    
+
+
+
+
+      
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="boostrap.css">
+    <style>
+
+        .ed{
+            background-color: #fff;
+            padding: 5%;
+            margin-top: 5%;     
+        }
+        .linksedit{
+            color: #f7e6e6ea;
+            font-size: large;
+            padding: 2%;
+        }
+        .linksedit:hover{
+            color:#e28c8cea;
+        }
+
+    </style>
+    <title>Shaikh Traders</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+                    <a class="navbar-brand" href="index.html"><img class="edit" src="images/logo.png" alt="NED"></a>
+                </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto nav-tabs">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="store.html">STORE </a>
+                    </li>
+                    <li class="nav-item dropdown" >
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown " role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          CUTOMER CARE
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                          <a class="dropdown-item" href="helpcenter.html">Help Center</a>
+                          <a class="dropdown-item" href="ordering.html">Ordering</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" href="#">TRACK MY ORDER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign Up</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <div class="modal fade modall" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Track my Order</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Please confirm your email:</label>
+                  <input type="text" class="form-control" id="recipient-name"  placeholder="someone@email.com">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Your order number:</label>
+                  <input class="form-control" id="message-text" placeholder="eg: 123456789"></input>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary">Track</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="modal fade modall" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login To Your Account</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Username:</label>
+                  <input type="text" class="form-control" id="recipient-name" placeholder="Shaikh-User">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="ed container-fluid ac">
+        <div class="searchbar">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2  ml-auto" id="search" type="search" placeholder="Search Your Questions Here" aria-label="Search">
+                    <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Ask</button>
+                </form>
+        </div>
+    </div>
+    <div class="topheading">
+        --Shaikh Store
+
+    </div>
+    <div class="topquestionheading">
+        Top Questions
+    </div>
+
+
+    <!-- Button trigger modal -->
+
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <a  data-toggle="modal" data-target="#staticBackdrop">
+            <p class="linksedit"> ( 1 ) How do I join Shaikh Store?</p>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">How do I join Shaikh Store?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        Currently, participation in Shaikh Store is on an "invite-only" basis, at the discretion of the Shaikh team based on performance. Reach out to your Key Account Manager to learn more about enlisting.
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Understood</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </a>
+</div>
+        
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">     
+        <a  data-toggle="modal" data-target="#staticB">
+            <p class="linksedit"> ( 2 ) What is a Flagship Store?</p>
+            <!-- Modal -->
+                <div class="modal fade" id="staticB" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">What is a Flagship Store?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            Flagship stores are a selection of leading international and local brands, online brands and retailers. Flagship stores are the cornerstone and core brands that make up Shaikh Store. <br>
+
+Remember that Shaikh Traders has <b>"Online Flagship Stores"</b>. They are not physical outlets/ stores.
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Understood</button>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+            </a>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <a  data-toggle="modal" data-target="#Backdrop">
+            <p class="linksedit"> ( 3 ) How can I identify a Shaikh Traders product in the website?</p>
+            <!-- Modal -->
+        <div class="modal fade" id="Backdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">How can I identify a Shaikh Traders product in the website?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    You can identify "Shaikh Traders" products by the "Shaikh Traders" badge on the product's page and catalog page for specific products. These products are sold from the Shaikh Traders Flagship Stores and there are certified & trusted Shaikh sellers.
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Understood</button>
+                </div>
+            </div>
+            </div>
+            </div> 
+        </a>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">       
+        <a  data-toggle="modal" data-target="#Backp">
+            <p class="linksedit"> ( 4 ) What do I do if my order did not reach in the promised lead time?</p>
+            <!-- Modal -->
+        <div class="modal fade" id="Backp" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">What do I do if my order did not reach in the promised lead time?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    If you do not receive your Shaikh Store orders within the expected delivery dates specified for your order, you can first check the status of your order in the <b>"My Orders" </b>page in your Daraz account. This allows you to see if the seller has shipped the order yet or not.
+
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Understood</button>
+                </div>
+            </div>
+            </div>
+            </div>    
+        </a>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <a  data-toggle="modal" data-target="#Bckp">
+            <p class="linksedit"> ( 5 ) What is Shaikh return policy?</p>
+            <!-- Modal -->
+        <div class="modal fade" id="Bckp" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">What is Shaikh return policy?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    Shaikh Traders offers 14-days easy returns, allowing you to return the product within 14 days after delivery. As per Shaikh return policy, you need to fill in the Online Return Form through your Shaikh Account.
+            
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Understood</button>
+                </div>
+            </div>
+            </div>
+            </div>    
+        </a>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <a  data-toggle="modal" data-target="#Bkp">
+            <p class="linksedit"> ( 6 ) What is Shaikh Store?
+            </p>
+            <!-- Modal -->
+        <div class="modal fade" id="Bkp" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">What is Shaikh Store?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    DarazMall is basically Pakistan's largest shopping mall! It is a dedicated channel on the Daraz platform with a carefully curated selection of branded products sourced directly from brands and brand authorized sellers.<br>
+
+DarazMall offers customers the highest-quality online shopping experience by delivering on the following promises:<br>
+
+<b>1. </b>100% Authenticity: On Shaikh Store, we guarantee you will receive only original, authentic branded products.<br>
+<b>2. </b>14 day easy returns: 14 day easy returns for all Shaikh Store products, except non-returnable categories as per Shaikh guidelines.
+<b>3. </b>Shaikh Express Delivery
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Understood</button>
+                </div>
+            </div>
+            </div>
+            </div>    
+        </a>
+    </div>
+    </div>
+
+
+
+    <!--  FOOTER  -->
+    
+    <div class="container footermgtop foo">
+    <div class="row">
+    <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+        <ul class="icon">
+            <li id="g">
+                <a   id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-facebook-official" aria-hidden="true"></i></span></a>
+            </li>
+            <li id="g">
+                <a  id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+            </li>
+            <li id="g">
+                <a  id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-phone-square" aria-hidden="true"></i></span></a>
+            </li>
+            <li id="g">
+                <a  id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+            </li>
+        </ul>
+    </div>
+    </div>
+    </div>
+
+    <div class="footerborder">
+    <ul class="footerlinks">
+        <li>
+            <a  id="footerlinkss" href="index.html">HOME </a>
+        </li>
+        <li >
+            <a id="footerlinkss" href="store.html">STORE </a>
+        </li>
+        <li class="nav-item active dropdown" >
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown " role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              CUTOMER CARE <span class="sr-only">(current)</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+              <a class="dropdown-item" href="helpcenter.html">Help Center</a>
+              <a class="dropdown-item" href="ordering.html">Ordering</a>
+          </li>
+        <li>
+            <a id="footerlinkss" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" href="#">TRACK MY ORDER</a>
+        </li>
+        <li>
+            <a id="footerlinkss" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo" href="#">Login</a>
+        </li>
+        <li>
+            <a id="footerlinkss" href="signup.html">Sign Up</a>
+        </li>
+    </ul>
+    </div>
+    <div>
+    <a class="footerup" href="#"><span><i class="fa fa-arrow-circle-up " style="font-size:60px;" aria-hidden="true"></i></span></a>
+    </div>
+    <div class="footerlast">
+        Copyright © 2019 Saylani Welfare
+    </div>
+
+
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

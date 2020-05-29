@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="boostrap.css">
+    <style>
+
+        .ed{
+            background-color: #fff;
+            padding: 5%;
+            margin-top: 5%;     
+        }
+        .linksedit{
+            color: #f7e6e6ea;
+            font-size: large;
+            padding: 2%;
+        }
+        .linksedit:hover{
+            color:#e28c8cea;
+        }
+    </style>
+    <title>Shaikh Traders</title>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+                    <a class="navbar-brand" href="index.html"><img class="edit" src="images/logo.png" alt="NED"></a>
+                </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto nav-tabs">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="store.html">STORE </a>
+                    </li>
+                    <li class="nav-item active dropdown" >
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown " role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          CUTOMER CARE <span class="sr-only">(current)</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                          <a class="dropdown-item" href="helpcenter.html">Help Center</a>
+                          <a class="dropdown-item" href="ordering.html">Ordering</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" href="#">TRACK MY ORDER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign Up</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <div class="modal fade modall" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Track my Order</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Please confirm your email:</label>
+                  <input type="text" class="form-control" id="recipient-name"  placeholder="someone@email.com">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Your order number:</label>
+                  <input class="form-control" id="message-text" placeholder="eg: 123456789"></input>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary">Track</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="modal fade modall" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login To Your Account</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Username:</label>
+                  <input type="text" class="form-control" id="recipient-name" placeholder="Shaikh-User">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="ed container-fluid ac">
+        <div class="searchbar">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2  ml-auto" id="search" type="search" placeholder="Search Your Questions Here" aria-label="Search">
+                    <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Ask</button>
+                </form>
+        </div>
+    </div>
+    <div class="topheading">
+        --Returns & Refunds
+
+    </div>
+    <div class="topquestionheading">
+        Top Questions
+    </div>
+
+    <!-- Button trigger modal -->
+
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <a  data-toggle="modal" data-target="#staticBackdrop">
+            <p class="linksedit"> ( 1 ) Can I return oversea Products?</p>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Can I return oversea Products?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        The following return policy applies to overseas products and supersedes all other terms and conditions of sales on Daraz and the Daraz return policy:<br>
+
+Returns for the global items are only accepted for the reason listed below:<br>
+
+Item is defective/ Item is damaged upon delivery or is not according to the sellers specification mentioned on the website,<br>
+
+Item is Wrong: Item delivered is not the item you ordered.<br>
+
+Note: Returns on any other basis will not be accepted.<br>
+
+Feel free to contact us via Live Chat if you have any confusion.<br>
+
+<b>NOTE:</b>As Lock-down situation due to COVID-19 situation in the country. You might experience delays in the return timelines. We apologize for the inconvenience and we are trying our best to process the return as soon as possible. Please stay at home and be safe.
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Understood</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </a>
+</div>
+        
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">     
+        <a  data-toggle="modal" data-target="#staticB">
+            <p class="linksedit"> ( 2 ) How do I know if my product has a warranty?</p>
+            <!-- Modal -->
+                <div class="modal fade" id="staticB" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">How do I know if my product has a warranty?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            If a warranty is offered on a product, the warranty period will be displayed on the product page, to the right of the product image below “Delivery”.<br>
+
+                            If a product is sold by multiple vendors, the warranty period offered by each vendor will be displayed to the right of “Seller” in the “Sold by x more sellers” box below the product image.
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Understood</button>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+            </a>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <a  data-toggle="modal" data-target="#Backdrop">
+            <p class="linksedit"> ( 3 ) How do I return my order?</p>
+            <!-- Modal -->
+        <div class="modal fade" id="Backdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">How do I return my order?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    If you are not 100% satisfied with your purchase from Daraz, you can return your item(s) for a full refund within 7 days of purchase and 14 days for Shaikh Traders item.<br>
+
+                    <b>Note:</b> The refund timeline will be based on payment method.
+
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Understood</button>
+                </div>
+            </div>
+            </div>
+            </div> 
+        </a>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">       
+        <a  data-toggle="modal" data-target="#Backp">
+            <p class="linksedit"> ( 4 ) What are the mandatory information and steps to return a product?
+            </p>
+            <!-- Modal -->
+        <div class="modal fade" id="Backp" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">What are the mandatory information and steps to return a product?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    To ensure that your return is accepted and processed smoothly please follow the below steps;<br>
+
+<b>1. </b>Pack item(s) and include the following documents.<br>
+- Manual/User guide<br>
+- Order Invoice<br>
+- Complete accessories with freebies.<br><br>
+
+<b>2. </b>Print return label and paste it on the box, Print label can be printed after you have finished filling up your Online Returns Form.<br>
+
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Understood</button>
+                </div>
+            </div>
+            </div>
+            </div>    
+        </a>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <a  data-toggle="modal" data-target="#Bckp">
+            <p class="linksedit"> ( 5 ) What is our refund policy?</p>
+            <!-- Modal -->
+        <div class="modal fade" id="Bckp" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">What is our refund policy?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <b>Issuance of Refunds</b>b><br>
+
+If your product is eligible for a refund, you can choose your preferred refund method based on the table below. The shipping fee is refunded along with the amount paid for your returned product.<br>
+
+The time required to complete a refund depends on the refund method you have selected. The refund time starts once the quality check is completed.<br>
+
+Furthermore, no refund/ returns policy for Digital Goods e.g: Utility payments, Gift Cards, Vouchers
+
+            
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Understood</button>
+                </div>
+            </div>
+            </div>
+            </div>    
+        </a>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <a  data-toggle="modal" data-target="#Bkp">
+            <p class="linksedit"> ( 6 ) How do I find the Return Tracking Number?
+            </p>
+            <!-- Modal -->
+        <div class="modal fade" id="Bkp" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">How do I find the Return Tracking Number?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    Its easy! Just follow below steps:<br><br>
+
+                    <b>Step 1-</b> Go to DarazApp & click on "My Account".<br>
+                    <b>Step 2-</b>Click on “My Returns”.<br>
+                    <b>Step 3-</b> Click on the “Return Status”.<br>
+                    <b>Step 4-</b> You can easily find the Return Tracking # here.
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Understood</button>
+                </div>
+            </div>
+            </div>
+            </div>    
+        </a>
+    </div>
+    </div>
+
+
+
+    <!--  FOOTER  -->
+    
+    <div class="container foo footermgtop">
+        <div class="row">
+        <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+            <ul class="icon">
+                <li id="g">
+                    <a   id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-facebook-official" aria-hidden="true"></i></span></a>
+                </li>
+                <li id="g">
+                    <a  id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+                </li>
+                <li id="g">
+                    <a  id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-phone-square" aria-hidden="true"></i></span></a>
+                </li>
+                <li id="g">
+                    <a  id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        </div>
+    
+        <div class="footerborder">
+        <ul class="footerlinks">
+            <li>
+                <a  id="footerlinkss" href="index.html">HOME </a>
+            </li>
+            <li >
+                <a id="footerlinkss" href="store.html">STORE </a>
+            </li>
+            <li >
+                <a id="footerlinkss" href="helpcenter.html">CUTOMER CARE</a>
+            </li>
+            <li>
+                <a id="footerlinkss" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" href="#">TRACK MY ORDER</a>
+            </li>
+            <li>
+                <a id="footerlinkss" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo" href="#">Login</a>
+            </li>
+            <li>
+                <a id="footerlinkss" href="signup.html">Sign Up</a>
+            </li>
+        </ul>
+        </div>
+        <div>
+        <a class="footerup" href="#"><span><i class="fa fa-arrow-circle-up " style="font-size:60px;" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="footerlast">
+            Copyright © 2019 Saylani Welfare
+        </div>
+    
+
+
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="boostrap.css">
+    <style>
+
+        .ed{
+            background-color: #fff;
+            padding: 5%;
+            margin-top: 5%;     
+        }
+        .linksedit{
+            color: #f7e6e6ea;
+            font-size: large;
+            padding: 2%;
+        }
+        .linksedit:hover{
+            color:#e28c8cea;
+        }
+        
+    </style>
+    <title>Shaikh Traders</title>
+</head>
+<body>
+
+    
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+                    <a class="navbar-brand" href="index.html"><img class="edit" src="images/logo.png" alt="NED"></a>
+                </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto nav-tabs">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="store.html">STORE </a>
+                    </li>
+                    <li class="nav-item active dropdown" >
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown " role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          CUTOMER CARE  <span class="sr-only">(current)</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                          <a class="dropdown-item" href="helpcenter.html">Help Center</a>
+                          <a class="dropdown-item" href="ordering.html">Ordering</a>
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" href="#">TRACK MY ORDER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Sign Up</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <div class="modal fade modall" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Track my Order</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Please confirm your email:</label>
+                  <input type="text" class="form-control" id="recipient-name"  placeholder="someone@email.com">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Your order number:</label>
+                  <input class="form-control" id="message-text" placeholder="eg: 123456789"></input>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary">Track</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="modal fade modall" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login To Your Account</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Username:</label>
+                  <input type="text" class="form-control" id="recipient-name" placeholder="Shaikh-User">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-secondary">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="ed container-fluid ac">
+        <div class="searchbar">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2  ml-auto" id="search" type="search" placeholder="Search Your Questions Here" aria-label="Search">
+                    <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Ask</button>
+                </form>
+        </div>
+    </div>
+    <div class="topheading">
+        --My Account
+
+    </div>
+    <div class="topquestionheading">
+        Top Questions
+    </div>
+
+
+
+    <!-- Button trigger modal -->
+
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <a  data-toggle="modal" data-target="#staticBackdrop">
+            <p class="linksedit"> ( 1 ) How can I deactivate Push Notifications from Store?</p>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">How can I deactivate Push Notifications from Store?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        Its easy!<br>
+                        <b>Step# 2 :</b> Click on "Settings" icon available on the top right corner of your ShaikhApp.<br>
+                        <b>Step# 1 :</b> Open ShaikhApp & click on "My Accounts" tab available at the bottom right corner of your ShaikhApp.<br>
+                        <b>Step# 3 :</b> Select "Messages" option.<br>
+                        <b>Step# 4 :</b> Here you can "Disable" the undesired notification option to turn it off.
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Understood</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </a>
+    </div>
+        
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">     
+        <a  data-toggle="modal" data-target="#staticB">
+            <p class="linksedit"> ( 2 ) How can I sign-up as a customer on Shaikh Traders?</p>
+            <!-- Modal -->
+                <div class="modal fade" id="staticB" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">How can I sign-up as a customer on Shaikh Traders?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            It's easy! Just follow the below steps:<br>
+                            <b>1. </b>Start by clicking on“Sign Up”in the top right corner of your screen.<br>
+                            <b>2. </b>You will then be asked to provide some basic & valid information.<br>
+                            <b>3. </b>When you have provided the required information.<br>
+                            <b>4. </b>Click"Submit"to finish the sign-up process.<br>
+                            We will also send you an email to welcome you to Daraz.
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Understood</button>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+            </a>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <a  data-toggle="modal" data-target="#Backdrop">
+            <p class="linksedit"> ( 3 ) How to reset your password through Email/SMS Verification?</p>
+            <!-- Modal -->
+        <div class="modal fade" id="Backdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">How to reset your password through Email/SMS Verification?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    If you forgot your password and need to know how to do it? So, please follow as per below:<br>
+                    <b>Step:1 -</b> Click on “Forgot Password”.<br>
+                    <b>Step:2 -</b> Add “Phone Number” Or “Email”.<br>
+                    <b>Step:3 -</b> Slide to Continue.<br>
+                    <b>Step:4 -</b> Verify through the way which is convenient for you.<br>
+                    <b>Step:5 -</b> Press “Send” to get the Verification Code on Email/SMS.<br>
+                    <b>Step:6 -</b> Click on “Verify Code”.<br>
+                    <b>Step:7 -</b> Enter “New Password” and then “Retype Password”.<br>
+                    Your password has been reset.
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Understood</button>
+                </div>
+            </div>
+            </div>
+            </div> 
+        </a>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">       
+        <a  data-toggle="modal" data-target="#Backp">
+            <p class="linksedit"> ( 4 ) How to Unsubscribe a Daraz Newsletter?</p>
+            <!-- Modal -->
+        <div class="modal fade" id="Backp" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">How to Unsubscribe a Daraz Newsletter?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    If you want to unsubscribe Daraz Newsletters, then you need to follow the below-mentioned steps:<br>
+                    <b>Step #1-</b> Find the “Unsubscribe Newsletter” button. <br>
+                    <b>Step #2-</b> Click on it, it will redirect on this page:<br>
+                    <b>Step #3 –</b> Click on Submit Form once you have selected the reason.<br>
+                    It will take 24 hours to remove your email. We will really miss you. Hope to see you again.
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Understood</button>
+                </div>
+            </div>
+            </div>
+            </div>    
+        </a>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <a  data-toggle="modal" data-target="#Bckp">
+            <p class="linksedit"> ( 5 ) How to change Contact number?</p>
+            <!-- Modal -->
+        <div class="modal fade" id="Bckp" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">How to change Contact number?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    In order to change your phone number, please follow below mention steps:<br>
+                    <b>1. </b>Login to your Account.<br>
+                    <b>2. </b>Click on Setting icon.<br>
+                    <b>3. </b>Click on Account information.<br>
+                    <b>4. </b>Click on Change Mobile.<br>
+                    <b>5. </b>Verify your New Mobile Number through SMS.
+            
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Understood</button>
+                </div>
+            </div>
+            </div>
+            </div>    
+        </a>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <a  data-toggle="modal" data-target="#Bkp">
+            <p class="linksedit"> ( 6 ) How to subscribe Shaikh newsletters?
+            </p>
+            <!-- Modal -->
+        <div class="modal fade" id="Bkp" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">How to subscribe Shaikh newsletters?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <b>Step 1:</b> Login to your account using your Daraz user id and password.<br>
+                    <b>Step 2:</b> Click on your Name at the top right corner. Now click on"Manage My Account"<br>
+                    <b>Step 3:</b> Under“Personal Profile”Click on"Subscribe from our Newsletter".<br>
+                    <b>Step 4:</b>Popup message will appear on your screen to Subscribe, read Daraz Privacy Policy& click on Subscribe button.<br>
+                    <b>Step 5:</b>You will get Subscribe then and there.<br><br>
+
+                    <b>Note:</b> It can only be done through website.
+            
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Understood</button>
+                </div>
+            </div>
+            </div>
+            </div>    
+        </a>
+    </div>
+    </div>
+
+
+
+    <!--  FOOTER  -->
+    
+    <div class="container foo footermgtop">
+        <div class="row">
+        <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+            <ul class="icon">
+                <li id="g">
+                    <a   id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-facebook-official" aria-hidden="true"></i></span></a>
+                </li>
+                <li id="g">
+                    <a  id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+                </li>
+                <li id="g">
+                    <a  id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-phone-square" aria-hidden="true"></i></span></a>
+                </li>
+                <li id="g">
+                    <a  id="footericon" href="https://www.facebook.com/saylaniwelfare/" class="btn btn-peimary btn-lg" target="_blank"><span><i class="fa fa-envelope" aria-hidden="true"></i></span></a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        </div>
+    
+        <div class="footerborder">
+        <ul class="footerlinks">
+            <li>
+                <a  id="footerlinkss" href="index.html">HOME </a>
+            </li>
+            <li >
+                <a id="footerlinkss" href="store.html">STORE </a>
+            </li>
+            <li >
+                <a id="footerlinkss" href="helpcenter.html">CUTOMER CARE</a>
+            </li>
+            <li>
+                <a id="footerlinkss" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" href="#">TRACK MY ORDER</a>
+            </li>
+            <li>
+                <a id="footerlinkss" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo" href="#">Login</a>
+            </li>
+            <li>
+                <a id="footerlinkss" href="signup.html">Sign Up</a>
+            </li>
+        </ul>
+        </div>
+        <div>
+        <a class="footerup" href="#"><span><i class="fa fa-arrow-circle-up " style="font-size:60px;" aria-hidden="true"></i></span></a>
+        </div>
+        <div class="footerlast">
+            Copyright © 2019 Saylani Welfare
+        </div>
+
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
+
